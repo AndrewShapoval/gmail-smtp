@@ -5,8 +5,8 @@ const bodyParser = require('body-parser');
 const app = express()
 app.use(cors())
 const port = process.env.PORT || 3010
-const smtp_login = process.env.SMTP_LOGIN || "----"
-const smtp_password = process.env.SMTP_PASSWORD || "----"
+const smtp_login = process.env.SMTP_LOGIN
+const smtp_password = process.env.SMTP_PASSWORD
 // create reusable transporter object using the default SMTP transport
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
